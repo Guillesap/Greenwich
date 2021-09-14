@@ -1,4 +1,4 @@
-alert ("Practicando JavaScript");
+alert ("Practicando clase JavaScript");
 let nombre= prompt("Ingresa tu nombre");
 let apellido= prompt("Ingresa tu apellido");
 let lenguaje= prompt("Ingresa tu lenguaje de programación preferido");
