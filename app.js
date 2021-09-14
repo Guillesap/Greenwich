@@ -7,3 +7,10 @@ console.log (nombre);
 console.log (apellido);
 console.log (lenguaje);
 
+let numero1 = Number(prompt("ingresa tu numero"));
+let numero2 = Number(prompt ("ingresa tu numero"));
+
+console.log(numero1 + numero2);
+console.log(numero1 - numero2);
+console.log(numero1 / numero2);
+console.log(numero1 * numero2);
