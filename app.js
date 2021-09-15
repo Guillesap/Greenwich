@@ -14,3 +14,21 @@ console.log(numero1 + numero2);
 console.log(numero1 - numero2);
 console.log(numero1 / numero2);
 console.log(numero1 * numero2);
+
+//practicando condicionales: if
+
+let unNumero = 10
+if (unNumero == 10) {
+    alert ("vas a ver este mensaje");
+}
+if (unNumero == 20) {
+    alert ("no veras este mensaje");
+}
+
+let nombreUsuario = prompt("Ingresar nombre de usuario");
+if (nombreUsuario == "") {
+alert("No ingresaste el nombre de usuario");
+}
+else {
+alert("Nombre de usuario ingresado " + nombreUsuario);
+}
