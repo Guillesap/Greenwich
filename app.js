@@ -61,12 +61,12 @@ let cont = "willy"
 let pass= prompt ("Ingrese su contraseña")
 if(pass == cont){
     console.log ("Contraseña correcta");
+} else if (pass==="elwilly") {
+    console.log ("Eres el administrador");
 } else {
     console.log ("Contraseña incorrecta");
 }
-if (pass==="elwilly") {
-    console.log ("Eres el administrador");
-}
+
 // Ingreso a Fiesta
 
 const nombrePersona1 = "guillermo"
