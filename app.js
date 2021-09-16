@@ -73,7 +73,9 @@ const nombrePersona1 = "guillermo"
 const nombrePersona2 = "claudio"
 const nombrePersona3 = "david"
 
-const nombreDinamico = prompt ("¿Cual es tu nombre?")
+let nombreDinamico = prompt ("¿Cual es tu nombre?")
+
+nombreDinamico = nombreDinamico.toLowerCase()
 
 if (nombreDinamico === nombrePersona1 || nombreDinamico === nombrePersona2 || nombreDinamico === nombrePersona3) {
     console.log ("Podes ingresar, disfruta la fiesta");
