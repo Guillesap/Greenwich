@@ -67,3 +67,16 @@ if(pass == cont){
 if (pass==="elwilly") {
     console.log ("Eres el administrador");
 }
+// Ingreso a Fiesta
+
+const nombrePersona1 = "guillermo"
+const nombrePersona2 = "claudio"
+const nombrePersona3 = "david"
+
+const nombreDinamico = prompt ("¿Cual es tu nombre?")
+
+if (nombreDinamico === nombrePersona1 || nombreDinamico === nombrePersona2 || nombreDinamico === nombrePersona3) {
+    console.log ("Podes ingresar, disfruta la fiesta");
+} else {
+    console.log ("No puedes ingresar, no figuras en lista")
+}
