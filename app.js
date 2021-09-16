@@ -32,3 +32,38 @@ alert("No ingresaste el nombre de usuario");
 else {
 alert("Nombre de usuario ingresado " + nombreUsuario);
 }
+// practicando en clase
+let frio= true;
+if (frio) {
+    console.log ("debo abrigarme")
+}
+
+/*operadores comparacion
+asignar =
+igual ==
+mayor >
+menor<
+mayor igual >=
+menor igual <=
+estracitamente igual ===
+estricamente distinto !=
+*/
+
+let edad=prompt("que edad tenes?")
+if (edad >18){
+    console.log ("Puedes ingresar al recinto");
+}else {
+    console.log("sos Menor no puedes ingresar")
+}
+
+// contraseña
+let cont = "willy"
+let pass= prompt ("Ingrese su contraseña")
+if(pass == cont){
+    console.log ("Contraseña correcta");
+} else {
+    console.log ("Contraseña incorrecta");
+}
+if (pass==="elwilly") {
+    console.log ("Eres el administrador");
+}
