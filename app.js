@@ -1,29 +1,11 @@
-alert ("Practicando clase JavaScript");
+alert ("Bienvenido a la página de Greenwich Inglés");
 let nombre= prompt("Ingresa tu nombre");
 let apellido= prompt("Ingresa tu apellido");
-let lenguaje= prompt("Ingresa tu lenguaje de programación preferido");
+let conocimiento= prompt("¿Tienes conocimiento de ingles?");
 
 console.log (nombre);
 console.log (apellido);
-console.log (lenguaje);
-
-let numero1 = Number(prompt("ingresa tu numero"));
-let numero2 = Number(prompt ("ingresa tu numero"));
-
-console.log(numero1 + numero2);
-console.log(numero1 - numero2);
-console.log(numero1 / numero2);
-console.log(numero1 * numero2);
-
-//practicando condicionales: if
-
-let unNumero = 10
-if (unNumero == 10) {
-    alert ("vas a ver este mensaje");
-}
-if (unNumero == 20) {
-    alert ("no veras este mensaje");
-}
+console.log (conocimiento);
 
 let nombreUsuario = prompt("Ingresar nombre de usuario");
 if (nombreUsuario == "") {
@@ -32,28 +14,12 @@ alert("No ingresaste el nombre de usuario");
 else {
 alert("Nombre de usuario ingresado " + nombreUsuario);
 }
-// practicando en clase
-let frio= true;
-if (frio) {
-    console.log ("debo abrigarme")
-}
 
-/*operadores comparacion
-asignar =
-igual ==
-mayor >
-menor<
-mayor igual >=
-menor igual <=
-estracitamente igual ===
-estricamente distinto !=
-*/
-
-let edad=prompt("que edad tenes?")
+let edad=prompt("¿Que edad tenes?")
 if (edad >18){
-    console.log ("Puedes ingresar al recinto");
+    alert ("Puedes ingresar en curso Adolescentes/Adultos");
 }else {
-    console.log("sos Menor no puedes ingresar")
+    alert ("Puedes ingresar curso Niños")
 }
 
 // contraseña
@@ -65,20 +31,4 @@ if(pass == cont){
     console.log ("Eres el administrador");
 } else {
     console.log ("Contraseña incorrecta");
-}
-
-// Ingreso a Fiesta
-
-const nombrePersona1 = "guillermo"
-const nombrePersona2 = "claudio"
-const nombrePersona3 = "david"
-
-let nombreDinamico = prompt ("¿Cual es tu nombre?")
-
-nombreDinamico = nombreDinamico.toLowerCase()
-
-if (nombreDinamico === nombrePersona1 || nombreDinamico === nombrePersona2 || nombreDinamico === nombrePersona3) {
-    console.log ("Podes ingresar, disfruta la fiesta");
-} else {
-    console.log ("No puedes ingresar, no figuras en lista")
 }
