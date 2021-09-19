@@ -15,20 +15,22 @@ else {
 alert("Nombre de usuario ingresado " + nombreUsuario);
 }
 
+// contraseña
+let cont = "willy"
+let pass= prompt ("Ingrese su contraseña")
+if(pass == cont){
+    alert ("Contraseña correcta");
+} else if (pass==="elwilly") {
+    alert ("Eres el administrador");
+} else {
+    alert ("Contraseña incorrecta");
+}
+
+// edad
+
 let edad=prompt("¿Que edad tenes?")
 if (edad >18){
     alert ("Puedes ingresar en curso Adolescentes/Adultos");
 }else {
     alert ("Puedes ingresar curso Niños")
-}
-
-// contraseña
-let cont = "willy"
-let pass= prompt ("Ingrese su contraseña")
-if(pass == cont){
-    console.log ("Contraseña correcta");
-} else if (pass==="elwilly") {
-    console.log ("Eres el administrador");
-} else {
-    console.log ("Contraseña incorrecta");
 }
