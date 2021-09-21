@@ -65,6 +65,7 @@ do{
 
 //EJERCUCIO CLASE N° 3 FOR
 let numero = 0
-for (0; numero < 5; numero = numero +1){
-    console.log ("Estudio Inglés en Greenwich")
-}
+
+for (numero = 0; numero < 5; numero = numero +1){  
+
+  console.log ("Estudie Inglés en Greenwich")}
