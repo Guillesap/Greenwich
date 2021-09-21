@@ -62,3 +62,9 @@ do{
     console.log(words);  
     words = prompt('Introduce palabras en inglés, cuando deseas terminar ingresa la palabra: END');  
 }while(words !='END');
+
+//EJERCUCIO CLASE N° 3 FOR
+let numero = 0
+for (0; numero < 5; numero = numero +1){
+    console.log ("Estudio Inglés en Greenwich")
+}
