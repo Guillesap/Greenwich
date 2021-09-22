@@ -1,71 +1,47 @@
-// CLASE N° 1
-alert ("Bienvenido a la página de Greenwich Inglés");
-let nombre= prompt("Ingresa tu nombre");
-let apellido= prompt("Ingresa tu apellido");
-let conocimiento= prompt("¿Tienes conocimiento de ingles?");
 
-console.log (nombre);
-console.log (apellido);
-console.log (conocimiento);
-
-let nombreUsuario = prompt("Ingresar nombre de usuario");
-if (nombreUsuario == "") {
-alert("No ingresaste el nombre de usuario");
-}
-else {
-alert("Nombre de usuario ingresado " + nombreUsuario);
-}
-
-// CLASE N° 2 CONDICIONALES
-let cont = "willy"
-let pass= prompt ("Ingrese su contraseña")
-if(pass == cont){
-    alert ("Contraseña correcta");
-} else if (pass==="elwilly") {
-    alert ("Eres el administrador");
-} else {
-    alert ("Contraseña incorrecta");
-}
-
-// OTRO EJERCICIO CLASE N° 2 CONDICIONALES
-
-let edad=prompt("¿Que edad tenes?")
-if (edad >18){
-    alert ("Puedes ingresar en curso Adolescentes/Adultos");
+//DESAFIO CLASE N° 4
+var promedio = prompt ("Ingrese la nota de su último examen");
+if (promedio >10) {
+    alert ("Error, tienes que ingresar una nota  del 1 al 10");
 }else {
-    alert ("Puedes ingresar curso Niños")
-}
-
-// EJERCICIO CLASE N° 3
-
-let entrada = prompt ("Ingresa un nombre de Usuario para estudiar inglés");
-while (entrada != "END" ) {
-    switch (entrada) {
-        case"maria":
-            alert ("Bienvenida a Greenwich Maria");
-            break;
-        case"guillermo":
-            alert ("Bienvenido a Greenwich Guillermo")
-            break;
-        default:
-            alert ("¿ No tenemos tu registro, quien eres?")
-            break;   
+    if (promedio <6) {
+    alert ("Reprobaste, tienes que recuperar el módulo");
+    } else {
+    alert ("Felicitaciones, Aprobaste, continuamos en el próximo módulo");
     }
-    entrada = prompt ("Ingresa un nuevo usuario para estudiar inglés y para finalizar tipea END");
-            alert ("Gracias por visitar nuestro site")
+} 
+
+// OTRO EJEMPLO CLASE 4
+
+//por favor ingrese curso
+let curso = prompt("Por favor ingresá el curso que desee entre: niños, adolescentes, adultos y a distancia");
+switch (curso){
+    case "niños":
+        alert ("El curso para Niños está disponible, inicia el 01/10/2021");
+        break;
+    case "adolescentes":
+        alert ("El curso para Adolescentes está disponible, inicia el 05/10/2021");
+        break;
+    case "adultos":
+        alert ("El curso para Adultos está disponible, inicia el 05/10/2021");
+        break;
+    default:
+        alert ("El curso a distancia no está disponible actualmente. Se incorporará a la brevedad");
+        break;  
+    }
+
+//COMPLEMENTARIO 4  CALCULAR IVA
+let numero = Number(prompt('Por favor ingrese el precio del libro de inglés de nuestro catálogo, que desea, sin IVA:'))
+let iva = Number(prompt('Por favor ingrese el número 21, siendo el mismo el porcentaje de IVA del producto:'))
+
+const calculadorIVA = (precio, porcentaje) => {
+    let precioConIva;
+    if(porcentaje < 10){
+        precioConIva =  precio * Number(`1.0${porcentaje}`)
+    }else{
+        precioConIva =  precio * Number(`1.${porcentaje}`)
+    }        
+    return `El porcentaje del Iva: ${porcentaje}, de su libro seleccionado, de $${precio}, resulta un total a abonar de  $${precioConIva}`;
 }
+alert(calculadorIVA(numero, iva))
 
-//OTRO EJERCICIO CLASE N° 3
-let words = prompt('Introduce palabras en inglés que conozcas, cuando quieras terminar ingresa la palabra: END')
-
-do{
-    console.log(words);  
-    words = prompt('Introduce palabras en inglés, cuando deseas terminar ingresa la palabra: END');  
-}while(words !='END');
-
-//EJERCUCIO CLASE N° 3 FOR
-let numero = 0
-
-for (numero = 0; numero < 5; numero = numero +1){  
-
-  console.log ("Estudie Inglés en Greenwich")}
