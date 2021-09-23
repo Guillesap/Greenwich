@@ -40,3 +40,20 @@ imprimirPorconsola()
 imprimirPorconsola()
 imprimirPorconsola()
 
+//COMPLEMENTARIO 4  CALCULAR IVA
+let numero = Number(prompt('Por favor ingrese el precio del libro de inglés de nuestro catálogo, que desea, sin IVA:'))
+let iva = Number(prompt('Por favor ingrese el número 21, siendo el mismo el porcentaje de IVA del producto:'))
+
+const calculadorIVA = (precio, porcentaje) => {
+    let precioConIva;
+    if(porcentaje < 10){
+        precioConIva =  precio * Number(`1.0${porcentaje}`)
+    }else{
+        precioConIva =  precio * Number(`1.${porcentaje}`)
+    }        
+    return `El porcentaje del Iva: ${porcentaje}, de su libro seleccionado, de $${precio}, resulta un total a abonar de  $${precioConIva}`;
+}
+alert(calculadorIVA(numero, iva))
+
+
+
