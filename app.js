@@ -29,4 +29,14 @@ switch (curso){
         break;  
     }
 
+//OTRO EJEMPLO CLASE 4
+
+function imprimirPorconsola () {
+    let dato = prompt ("Ingrese 3 gustos para practicar inglés: Ejemplos: Escuchar música en inglés, ver Series, ver películas, etc")
+    let resultado = dato
+    console.log (resultado)
+}
+imprimirPorconsola()
+imprimirPorconsola()
+imprimirPorconsola()
 
