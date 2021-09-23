@@ -1,18 +1,25 @@
 //COMPLEMENTARIO 4  
-//PRIMERA FUNCION  Calculador IVA
-let numero = Number(prompt('Por favor ingrese el precio del libro de inglés de nuestro catálogo, que desea, sin IVA:'))
-let iva = Number(prompt('Por favor ingrese el número 21, siendo el mismo el porcentaje de IVA del producto:'))
+//PRIMERA FUNCION  Calculador multiplo
+let divisor = parseInt(prompt('Por favor ingresa un número '))
+let dividendo = parseInt(prompt('Por favor ingresa un segundo número'))
 
-const calculadorIVA = (precio, porcentaje) => {
-    let precioConIva;
-    if(porcentaje < 10){
-        precioConIva =  precio * Number(`1.0${porcentaje}`)
-    }else{
-        precioConIva =  precio * Number(`1.${porcentaje}`)
-    }        
-    return `El porcentaje del Iva: ${porcentaje}, de su libro seleccionado, de $${precio}, resulta un total a abonar de  $${precioConIva}`;
+while(isNaN(divisor)){
+    divisor = parseInt(prompt('ingresa un número valido'))
 }
-alert(calculadorIVA(numero, iva))
+while(isNaN(dividendo)){
+    dividendo = parseInt(prompt('ingresa un número valido'))
+}
+
+const esMultiplo = (num1, num2) =>{
+    if(num1%num2 == 0){
+        return 'Es multiplo';
+    }else{
+        return 'No es multiplo';
+    } 
+}
+
+console.log(esMultiplo(divisor, dividendo))
+
 
 //SEGUNDA FUNCION  Sumar precios
 let pedirPrecios = parseInt(prompt('Por favor ingresa el precio del producto que desea adquirir, al finalizar tipee una letra'))
@@ -36,26 +43,20 @@ const sumarPrecios = (p) =>{
 }
 alert(sumarPrecios(pedirPrecios))
 
-// TERCERA FUNCION  Calculador número multiplo
-let divisor = parseInt(prompt('Por favor ingresa un número '))
-let dividendo = parseInt(prompt('Por favor ingresa un segundo número'))
+// TERCERA FUNCION  CALCULAR IVA
+let numero = Number(prompt('Por favor ingrese el precio del libro de inglés de nuestro catálogo, que desea, sin IVA:'))
+let iva = Number(prompt('Por favor ingrese el número 21, siendo el mismo el porcentaje de IVA del producto:'))
 
-while(isNaN(divisor)){
-    divisor = parseInt(prompt('ingresa un número valido'))
-}
-while(isNaN(dividendo)){
-    dividendo = parseInt(prompt('ingresa un número valido'))
-}
-
-const esMultiplo = (num1, num2) =>{
-    if(num1%num2 == 0){
-        return 'Es multiplo';
+const calculadorIVA = (precio, porcentaje) => {
+    let precioConIva;
+    if(porcentaje < 10){
+        precioConIva =  precio * Number(`1.0${porcentaje}`)
     }else{
-        return 'No es multiplo';
-    } 
+        precioConIva =  precio * Number(`1.${porcentaje}`)
+    }        
+    return `El porcentaje del Iva: ${porcentaje}, de su libro seleccionado, de $${precio}, resulta un total a abonar de  $${precioConIva}`;
 }
-
-console.log(esMultiplo(divisor, dividendo))
+alert(calculadorIVA(numero, iva))
 
 
 
