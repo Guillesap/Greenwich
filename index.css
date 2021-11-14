@@ -121,18 +121,6 @@ h2 {
   font-family: 'Great Vibes', cursive;
 }
 
-.paraTransicion {
-  font-family: 'Permanent Marker', cursive;
-  font-size: 1.5cm;
-}
-.paraTransicion:hover {
-  transition: 3s;
-  font-size: 2cm;
-  color: #051970;
-  padding: 1cm;
-  
-}
-
 
 h3 {
   margin-left: auto;
