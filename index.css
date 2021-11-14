@@ -317,6 +317,16 @@ article {
   margin: 1;
 }
 
+/*contacto*/
+iframe {
+  display: flex;
+  margin: 0 auto;
+  flex-direction: row;
+  text-align: center;
+}
+
+
+
   /* media query */
 
 @media (max-width:768px) {
