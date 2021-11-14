@@ -123,10 +123,11 @@ h2 {
 
 .paraTransicion {
   font-family: 'Permanent Marker', cursive;
+  font-size: 1.5cm;
 }
 .paraTransicion:hover {
   transition: 3s;
-  font-size: 4rem;
+  font-size: 2cm;
   color: #051970;
   padding: 1cm;
   
