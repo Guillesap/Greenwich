@@ -115,16 +115,21 @@ h2 {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  color: #b3b4af;
+  color: #0c0574;
   padding: 10px;
-  font-size: 11mm;
+  font-size: 15mm;
+  font-family: 'Great Vibes', cursive;
 }
 
+.paraTransicion {
+  font-family: 'Permanent Marker', cursive;
+}
 .paraTransicion:hover {
   transition: 3s;
   font-size: 4rem;
   color: #051970;
   padding: 1cm;
+  
 }
 
 
@@ -164,12 +169,10 @@ h5 {
 }
 
 p {
-  color: #cac8c2;
+  color: #d80d0d;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 5mm;
 }
-
-
 
 /*pie de pagina*/
 footer {
