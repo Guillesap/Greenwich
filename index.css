@@ -115,7 +115,7 @@ h2 {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  color: #0c0574;
+  color: #1dbfd4;
   padding: 10px;
   font-size: 15mm;
   font-family: 'Great Vibes', cursive;
@@ -126,7 +126,7 @@ h3 {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  color: #fd3b0f;
+  color: #eef1e8;
   padding: 10px;
   font-size: 1cm;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
@@ -144,7 +144,7 @@ h3 {
 }
 h4 {
   text-align: center;
-  color: #0608a0;
+  color: #bccf0e;
   font-family: "Courier New", Courier, monospace;
 }
 
@@ -317,8 +317,14 @@ iframe {
   text-align: center;
 }
 
-
-
+/*darkmode*/
+.modo {
+  border: solid;
+  border-color:rgb(214, 217, 224);
+  background-color: black;
+  margin: 1mm;
+  padding: 0mm;
+}
   /* media query */
 
 @media (max-width:768px) {
